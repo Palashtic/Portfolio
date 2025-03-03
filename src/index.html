@@ -3,37 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Palash Chaturvedi | Data & Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background: #333;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        .project {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #007BFF;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #222;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Hey, I'm Palash 👋</h1>
+        <p>Data Engineer | Technical PM | Product Analyst</p>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>This section contains information about me.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>This section showcases my projects.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This section provides my contact information.</p>
-        </section>
-    </main>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Ever since I started working with large-scale data systems, I’ve been fascinated by how structured information fuels smarter decisions. From designing ETL pipelines to leveraging AI for insights, I love working at the intersection of engineering, analytics, and product strategy.</p>
+        <p>Outside of work, I’m into movies, football (the real one ⚽), gaming, and long-distance running.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects 🚀</h2>
+        <div class="project">
+            <h3><a href="https://github.com/yourusername/skill-hub" target="_blank">Skill Hub – AI Career Planner</a></h3>
+            <p>A platform that suggests skills and communities based on user goals, featuring AI-generated learning plans.</p>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/yourusername/etl-healthcare" target="_blank">ETL Pipeline for Healthcare Data</a></h3>
+            <p>Designed and optimized a pipeline processing billions of records using Snowflake and Airflow.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Let's connect! Reach out via <a href="mailto:your.email@example.com">email</a> or find me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+    </section>
+
     <footer>
-        <p>&copy; 2023 My Portfolio</p>
+        <p>&copy; 2025 Palash Chaturvedi | Built with ❤️</p>
     </footer>
-    <script src="scripts/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('nav ul li a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
