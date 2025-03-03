@@ -14,12 +14,45 @@
             text-align: center;
         }
 
+        nav {
+            background: #222;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
         .profile-pic {
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            margin-right: 15px;
             border: 3px solid white;
+            display: block;
+            margin: 0 auto 15px;
         }
 
         .header-content {
@@ -34,23 +67,15 @@
             padding: 40px;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            background: #333;
-            margin: 0;
-            padding: 10px 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
+        .resume-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
             text-decoration: none;
             font-size: 18px;
+            border-radius: 5px;
         }
 
         section {
@@ -66,10 +91,11 @@
             color: #007BFF;
         }
 
-        .project {
+        .project, .education, .work-experience {
             margin: 20px 0;
             padding: 15px;
             border-left: 4px solid #007BFF;
+            text-align: left;
         }
 
         footer {
@@ -82,6 +108,17 @@
 </head>
 <body>
 
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work Experience</a></li>
+            <li><a href="your-resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <header>
         <div class="header-content">
             <img src="CareerFair10.17-646.jpg" alt="Palash Chaturvedi" class="profile-pic">
@@ -89,14 +126,6 @@
         <h1>Palash Chaturvedi</h1>
         <p>Leveraging data to create impactful products and experiences.</p>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
     <section id="about">
         <h2>About Me</h2>
@@ -119,6 +148,32 @@
         </div>
     </section>
 
+    <section id="education">
+        <h2>Education 🎓</h2>
+        <div class="education">
+            <h3>University of California, Santa Barbara</h3>
+            <p>Master’s in Technology Management | 2024</p>
+        </div>
+        <div class="education">
+            <h3>SRM Institute of Science and Technology, Chennai</h3>
+            <p>Bachelor’s in Computer Science | 2021</p>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work">
+        <h2>Work Experience 💼</h2>
+        <div class="work-experience">
+            <h3>Data Engineer | Optum (UHG)</h3>
+            <p>• Led cloud migration of 2B+ records, designing the entire architecture from scratch.</p>
+            <p>• Built and optimized ETL pipelines using Snowflake and Airflow.</p>
+        </div>
+        <div class="work-experience">
+            <h3>AI Research Intern | Alfred Technologies</h3>
+            <p>• Implemented a text prediction model and contributed to front-end development.</p>
+        </div>
+    </section>
+    
     <section id="contact">
         <h2>Contact</h2>
         <p>Let's connect! Reach out via <a href="mailto:pncpalash@example.com">email</a> or find me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
