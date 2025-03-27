@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5dc; /* Beige background */
+    background-color: #f5f0e1; /* Beige background */
     color: #000; /* Black text */
 }
 
 /* Navigation Bar */
 header {
-    background: #e0d5b8; /* Darker beige */
+    background: #e0d5c6; /* Darker beige */
     padding: 15px 20px;
     text-align: center;
 }
@@ -34,16 +34,16 @@ header {
 #hero {
     text-align: center;
     padding: 100px 20px;
-    background: #ddd1af; /* Slightly darker beige */
-    color: black;
+    background: #e0d5c6; /* Darker beige */
+    color: #000; /* Black text */
 }
 
 #hero .btn {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background: #c4a484; /* Muted brownish-beige */
-    color: black;
+    background: #c9b8a8; /* Even darker beige for contrast */
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -71,7 +71,7 @@ section {
 /* Footer */
 footer {
     text-align: center;
-    background: #e0d5b8; /* Darker beige */
-    color: black;
+    background: #e0d5c6; /* Darker beige */
+    color: #000;
     padding: 20px;
 }
