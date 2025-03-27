@@ -1,4 +1,4 @@
-const words = ["Data", "Product"];
+const words = ["Data", "Product", "Sports"];
 let i = 0;
 let j = 0;
 let currentWord = "";
