@@ -31,14 +31,27 @@ header {
 }
 
 /* Hero Section */
+/* Hero Section - Full Screen */
 #hero {
-    height: 100vh; /* Full screen */
+    height: 100vh; /* Ensure it covers the full viewport height */
+    width: 100vw; /* Full width */
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align text to the left */
+    justify-content: flex-start; /* Align content to the left */
     padding-left: 10%;
     background: #e0d5c6; /* Darker beige */
+    box-sizing: border-box; /* Prevent extra margins */
+    overflow: hidden; /* Prevent scrolling issues */
 }
+
+/* Ensure no extra margins */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Styling the text */
 .hero-content h1 {
