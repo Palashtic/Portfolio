@@ -3,192 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palash Chaturvedi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-
-        nav {
-            background: #222;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px;
-        }
-
-        nav ul li a:hover {
-            color: #007BFF;
-        }
-
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid white;
-            display: block;
-            margin: 0 auto 15px;
-        }
-
-
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: #333;
-            color: white;
-        }
-
-        .resume-btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-        }
-
-        section {
-            margin: 50px auto;
-            max-width: 800px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #007BFF;
-        }
-
-        .project, .education, .work-experience {
-            margin: 20px 0;
-            padding: 15px;
-            border-left: 4px solid #007BFF;
-            text-align: left;
-        }
-
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #222;
-            color: white;
-        }
-    </style>
+    <title>Palash | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work Experience</a></li>
-            <li><a href="your-resume.pdf" target="_blank">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <div class="header-content">
-            <img src="CareerFair10.17-646.jpg" alt="Palash Chaturvedi" class="profile-pic">
-            <div>
-        <h1>Palash Chaturvedi</h1>
-        <p>Leveraging data to create impactful products and experiences.</p>
+        <nav>
+            <div class="logo">Palash</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+    
+    <section id="hero">
+        <h1>Hi, I'm Palash</h1>
+        <p>Building data-driven products & experiences</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hey, I’m Palash! 🚀</p>
-        <p>Ever since I started working with large-scale data systems, I’ve been fascinated by how structured information can fuel smarter decisions and drive real impact. From designing ETL pipelines that process billions of records to leveraging AI for actionable insights, I thrive at the intersection of engineering, analytics, and product strategy—where data meets decision-making.</p>
-        <p>My mission? To solve real-world problems with data and make the world a better place! 🌍</p>
-        <p>I recently moved to Santa Barbara, and it’s been an amazing journey so far. When I’m not deep into data, you’ll find me watching movies, analyzing football (the real one ⚽), gaming, or pushing my limits with long-distance running. Oh, and I have an insatiable curiosity—I love learning something new every day.</p>
-        <p>Welcome to my life board—let’s connect and build something great!</p>
+        <p>Brief intro about yourself, your experience, and goals.</p>
     </section>
-
+    
     <section id="projects">
-        <h2>Projects 🚀</h2>
-        <div class="project">
-            <h3><a href="https://github.com/palashtic/skill-hub" target="_blank">Skill Hub – AI Career Planner</a></h3>
-            <p>A platform that suggests skills and communities based on user goals, featuring AI-generated learning plans.</p>
-        </div>
-        <div class="project">
-            <h3><a href="https://github.com/yourusername/etl-healthcare" target="_blank">ETL Pipeline for Healthcare Data</a></h3>
-            <p>Designed and optimized a pipeline processing billions of records using Snowflake and Airflow.</p>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education 🎓</h2>
-        <div class="education">
-            <h3>University of California, Santa Barbara</h3>
-            <p>Master’s in Technology Management | 2024</p>
-        </div>
-        <div class="education">
-            <h3>SRM Institute of Science and Technology, Chennai</h3>
-            <p>Bachelor’s in Computer Science | 2021</p>
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Short description</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Short description</p>
+            </div>
         </div>
     </section>
-
-    <!-- Work Experience Section -->
-    <section id="work">
-        <h2>Work Experience 💼</h2>
-        <div class="work-experience">
-            <h3>Data Engineer | Optum (UHG)</h3>
-            <p>• Led cloud migration of 2B+ records, designing the entire architecture from scratch.</p>
-            <p>• Built and optimized ETL pipelines using Snowflake and Airflow.</p>
-        </div>
-        <div class="work-experience">
-            <h3>AI Research Intern | Alfred Technologies</h3>
-            <p>• Implemented a text prediction model and contributed to front-end development.</p>
-        </div>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
     </section>
-
-
 
     <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Let's connect! Reach out via <a href="mailto:pncpalash@example.com">email</a> or find me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
-        </section>    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll('nav ul li a').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-                });
-            });
-        });
-    </script>
-
+        <p>&copy; 2025 Palash</p>
+    </footer>
 </body>
 </html>
