@@ -32,10 +32,23 @@ header {
 
 /* Hero Section */
 #hero {
-    text-align: center;
-    padding: 100px 20px;
+    height: 100vh; /* Full screen */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+    padding-left: 10%;
     background: #e0d5c6; /* Darker beige */
-    color: #000; /* Black text */
+}
+
+/* Styling the text */
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    font-weight: normal;
 }
 
 #hero .btn {
@@ -74,4 +87,10 @@ footer {
     background: #e0d5c6; /* Darker beige */
     color: #000;
     padding: 20px;
+}
+#changing-text {
+    font-weight: bold;
+    border-right: 2px solid black;
+    padding-right: 5px;
+    display: inline-block;
 }
