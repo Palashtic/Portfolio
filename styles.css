@@ -4,22 +4,32 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 80%;
+    height: 100%;
     overflow-x: hidden; 
     background-color: #000; /* Black background */
     color: #fff; /* White text */
 }
 
-/* Navigation Bar */
+/* Sticky Navigation Bar */
 header {
+    position: fixed; /* Sticks to the top */
+    top: 0;
+    width: 100%;
     background: #111; /* Darker black for contrast */
     padding: 15px 20px;
     text-align: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Add padding to body so content doesn't go under header */
+body {
+    padding-top: 60px; /* Adjust based on header height */
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .nav-links li {
@@ -38,26 +48,27 @@ header {
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align text to the left */
-    padding-left: 10%;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
     background: #000; /* Black background */
 }
 
-/* Make sure the text is readable */
+/* Make sure the text is centered and big */
 .hero-content {
-    max-width: 50%;
+    max-width: 80%;
 }
 
 /* Styling the text */
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 5rem; /* Bigger text */
     margin: 0;
     color: #fff; /* White text */
 }
 
 .hero-content h2 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Slightly bigger */
     font-weight: normal;
     color: #fff; /* White text */
 }
@@ -75,21 +86,6 @@ header {
 section {
     padding: 50px 20px;
     text-align: center;
-}
-
-.project-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.project {
-    background: #222; /* Dark gray for contrast */
-    color: #fff; /* White text */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    width: 300px;
 }
 
 /* Footer */
