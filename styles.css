@@ -14,17 +14,18 @@ body, html {
 header {
     position: fixed; /* Sticks to the top */
     top: 0;
-    left: 0; /* Ensures it stays aligned to the left */
-    width: 100%; /* Full width of screen */
+    left: 0;
+    width: 100%;
     background: #111; /* Darker black for contrast */
     padding: 15px 20px;
     text-align: center;
-    z-index: 1000; /* Ensures it stays on top */
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
 /* Add padding to body so content doesn't go under header */
 body {
-    padding-top: 60px; /* Adjust based on header height */
+    padding-top: 80px; /* Adjust based on header height */
 }
 
 .nav-links {
@@ -47,21 +48,20 @@ body {
 /* Hero Section */
 #hero {
     height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
+    width: 100%; /* Full viewport width */
     display: flex;
-    flex-direction: row; /* Place sections side by side */
-    align-items: center; /* Align content vertically */
-    justify-content: flex-end; /* Align content to the right */
-    text-align: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     background: #000; /* Black background */
+    text-align: center;
 }
 
 /* Make sure the text is centered and big */
 .hero-content {
-    max-width: 50%;
+    max-width: 80%;
+    padding: 0 20px;
 }
 
-/* Styling the text */
 .hero-content h1 {
     font-size: 5rem; /* Bigger text */
     margin: 0;
@@ -87,19 +87,13 @@ body {
 section {
     padding: 50px 20px;
     text-align: center;
-}
-
-/* Move the "above," "project," "contact" to the right */
-section#about, section#projects, section#contact {
     display: flex;
-    justify-content: flex-end; /* Align these sections to the right */
-    width: 100%;
+    justify-content: center; /* Center content horizontally */
 }
 
-/* Project List */
 .project-list {
     display: flex;
-    justify-content: flex-end; /* Move projects to the right */
+    justify-content: center; /* Align projects centrally */
     gap: 20px;
 }
 
