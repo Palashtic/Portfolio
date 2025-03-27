@@ -1,8 +1,11 @@
 /* General Styles */
-body {
+body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
     background-color: #f5f0e1; /* Beige background */
     color: #000; /* Black text */
 }
@@ -30,28 +33,20 @@ header {
     font-weight: bold;
 }
 
-/* Hero Section */
-/* Hero Section - Full Screen */
 #hero {
-    height: 100vh; /* Ensure it covers the full viewport height */
-    width: 100vw; /* Full width */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content to the left */
+    justify-content: flex-start; /* Align text to the left */
     padding-left: 10%;
     background: #e0d5c6; /* Darker beige */
-    box-sizing: border-box; /* Prevent extra margins */
-    overflow: hidden; /* Prevent scrolling issues */
 }
 
-/* Ensure no extra margins */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+/* Make sure the text is readable */
+.hero-content {
+    max-width: 50%;
 }
-
 
 /* Styling the text */
 .hero-content h1 {
@@ -62,16 +57,6 @@ body, html {
 .hero-content h2 {
     font-size: 2rem;
     font-weight: normal;
-}
-
-#hero .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background: #c9b8a8; /* Even darker beige for contrast */
-    color: #000;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
 /* Sections */
