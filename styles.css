@@ -4,8 +4,9 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    overflow-x: hidden; 
+    height: 100%; /* Make sure body and html cover the entire screen */
+    overflow-x: hidden; /* Hide horizontal scroll */
+    overflow-y: auto; /* Allow vertical scroll only if necessary */
     background-color: #000; /* Black background */
     color: #fff; /* White text */
 }
@@ -89,6 +90,8 @@ section {
     text-align: center;
     display: flex;
     justify-content: center; /* Center content horizontally */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .project-list {
@@ -113,3 +116,9 @@ footer {
     color: #fff;
     padding: 20px;
 }
+
+/* Ensure no vertical overflow */
+body {
+    overflow-y: auto;
+}
+
