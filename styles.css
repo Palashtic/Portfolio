@@ -14,7 +14,8 @@ body, html {
 header {
     position: fixed; /* Sticks to the top */
     top: 0;
-    width: 100%;
+    left: 0; /* Ensures it stays aligned to the left */
+    width: 100%; /* Full width of screen */
     background: #111; /* Darker black for contrast */
     padding: 15px 20px;
     text-align: center;
@@ -48,16 +49,16 @@ body {
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    flex-direction: row; /* Place sections side by side */
+    align-items: center; /* Align content vertically */
+    justify-content: flex-end; /* Align content to the right */
     text-align: center;
     background: #000; /* Black background */
 }
 
 /* Make sure the text is centered and big */
 .hero-content {
-    max-width: 80%;
+    max-width: 50%;
 }
 
 /* Styling the text */
@@ -86,6 +87,29 @@ body {
 section {
     padding: 50px 20px;
     text-align: center;
+}
+
+/* Move the "above," "project," "contact" to the right */
+section#about, section#projects, section#contact {
+    display: flex;
+    justify-content: flex-end; /* Align these sections to the right */
+    width: 100%;
+}
+
+/* Project List */
+.project-list {
+    display: flex;
+    justify-content: flex-end; /* Move projects to the right */
+    gap: 20px;
+}
+
+.project {
+    background: #222; /* Dark gray for contrast */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 300px;
 }
 
 /* Footer */
