@@ -3,7 +3,7 @@ body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 80%;
     height: 100%; /* Use full height for the viewport */
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: auto; /* Allow vertical scrollbar only */
