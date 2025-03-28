@@ -158,13 +158,18 @@ button:hover {
     color: white; /* Change text color to white on hover */
 }
 
+/* Remove button styles for links */
+button:focus {
+    outline: none; /* Remove outline when clicked */
+}
+
 /* Specific button styles */
 .contact-btn {
-    font-size: 2rem; /* Larger font size */
+    font-size: 2rem; /* Larger text for "Get in Touch" */
 }
 
 .download-btn {
-    font-size: 1.8rem; /* Slightly smaller font size for download buttons */
+    font-size: 1.8rem; /* Smaller text for download buttons */
 }
 
 /* Add smooth scrolling effect when clicking links */
