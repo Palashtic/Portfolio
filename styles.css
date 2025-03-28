@@ -141,7 +141,7 @@ footer {
     padding: 20px;
 }
 
-a {
+span {
     font-size: 2rem; /* Larger text size */
     background-image: linear-gradient(135deg, #2F80ED 0%, #B2FFDA 100%); /* Gradient color */
     color: transparent; /* Make text transparent */
@@ -153,11 +153,12 @@ a {
     font-weight: bold;
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
 }
 
 /* Hover effect for text color */
-a:hover {
-    color: transparent; /* Keep the gradient text on hover */
+span:hover {
+    color: transparent; /* Keep the gradient on hover */
 }
 
 /* Specific link styles */
