@@ -7,6 +7,7 @@ body, html {
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     box-sizing: border-box;
+    overflow-x: hidden; /* Hide horizontal scroll */
 }
 
 /* Sticky Navigation Bar */
@@ -165,4 +166,9 @@ button:hover {
 
 .download-btn:hover {
     background-color: #218838;
+}
+
+/* Add smooth scrolling effect when clicking links */
+html {
+    scroll-behavior: smooth;
 }
