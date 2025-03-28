@@ -4,7 +4,8 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%; /* Full height */
-    overflow: hidden; /* Hide both vertical and horizontal scrollbars */
+    overflow-x: hidden; /* Hide horizontal scroll */
+    overflow-y: auto; /* Allow vertical scroll if needed */
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     box-sizing: border-box; /* Include padding/border in width/height */
@@ -49,18 +50,18 @@ body {
 /* Hero Section */
 #hero {
     display: flex;
-    justify-content: flex-start; /* Align text to the left */
-    align-items: center; /* Vertically center the content */
-    width: 100%;
-    height: 100vh; /* Take full screen height */
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Vertically center content */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full screen height */
     background: #000; /* Black background */
     box-sizing: border-box;
-    padding-left: 5%; /* Optional, adjust as needed */
 }
 
 /* Left Side (Hello I am Palash) */
 .hero-content-left {
-    max-width: 50%; /* Take up half the width */
+    width: 50%; /* Take up half of the screen */
+    padding-left: 5%; /* Optional, add some space from the left */
     color: #fff;
     text-align: left; /* Align text to the left */
 }
@@ -82,6 +83,14 @@ body {
     padding-right: 5px;
     display: inline-block;
     color: #fff;
+}
+
+/* Right Side (Empty for now, can be filled with other content) */
+.hero-content-right {
+    width: 50%; /* Take up the other half */
+    color: #fff;
+    text-align: right; /* Align text to the right */
+    padding-right: 5%; /* Optional, add space from the right */
 }
 
 /* Sections */
