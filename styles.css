@@ -1,15 +1,13 @@
 /* General Styles */
 body, html {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 80%;
-    height: 100%; /* Use full height for the viewport */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: auto; /* Allow vertical scrollbar only */
+    width: 100%;
+    height: 100%; /* Full height */
+    overflow: hidden; /* Hide both vertical and horizontal scrollbars */
     background-color: #000; /* Black background */
     color: #fff; /* White text */
-    box-sizing: border-box; /* Make sure padding and border are included in the height */
+    box-sizing: border-box; /* Include padding/border in width/height */
 }
 
 /* Sticky Navigation Bar */
@@ -25,9 +23,9 @@ header {
     box-sizing: border-box;
 }
 
-/* Add padding to body to avoid content getting hidden under the fixed header */
+/* Padding for the body to ensure content isn't hidden behind the fixed header */
 body {
-    padding-top: 80px; /* Adjust this value based on your header height */
+    padding-top: 80px; /* Adjust this to match your header height */
 }
 
 /* Navigation Links */
@@ -51,37 +49,30 @@ body {
 /* Hero Section */
 #hero {
     display: flex;
-    justify-content: space-between; /* Place content on both sides */
+    justify-content: flex-start; /* Align text to the left */
     align-items: center; /* Vertically center the content */
     width: 100%;
-    height: calc(100vh - 80px); /* Take full screen height minus the header */
+    height: 100vh; /* Take full screen height */
     background: #000; /* Black background */
+    box-sizing: border-box;
+    padding-left: 5%; /* Optional, adjust as needed */
 }
 
 /* Left Side (Hello I am Palash) */
 .hero-content-left {
     max-width: 50%; /* Take up half the width */
-    padding-left: 5%; /* Adjust for some space from the left */
     color: #fff;
     text-align: left; /* Align text to the left */
 }
 
 .hero-content-left h1 {
-    font-size: 5rem; /* Bigger text */
+    font-size: 5rem; /* Larger text */
     margin: 0;
 }
 
 .hero-content-left h2 {
-    font-size: 2.5rem; /* Slightly bigger */
+    font-size: 2.5rem;
     font-weight: normal;
-}
-
-/* Right side section (optional, for now empty) */
-.hero-content-right {
-    max-width: 50%; /* Take up the right side */
-    padding-right: 5%; /* Add some space from the right */
-    color: #fff;
-    text-align: right; /* Align text to the right */
 }
 
 /* Typing effect */
@@ -90,15 +81,16 @@ body {
     border-right: 2px solid white;
     padding-right: 5px;
     display: inline-block;
-    color: #fff; /* White text */
+    color: #fff;
 }
 
 /* Sections */
 section {
-    padding: 50px 20px;
-    text-align: center;
     display: flex;
     justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 50px 20px;
+    text-align: center;
     width: 100%;
     box-sizing: border-box;
 }
