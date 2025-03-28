@@ -138,32 +138,26 @@ footer {
     padding: 20px;
 }
 
-/* Button Styles */
-button {
-    background: none; /* Remove background */
-    color: transparent; /* Initially set color to transparent */
-    background-image: linear-gradient(135deg, #2F80ED 0%, #B2FFDA 100%); /* Gradient background */
-    font-size: 2rem; /* Increase text size */
-    border: none;
-    padding: 0; /* Remove padding to make it text */
-    cursor: pointer;
-    transition: color 0.3s ease; /* Smooth transition for text color change */
-    text-align: left; /* Align text to the left */
-    letter-spacing: 1px; /* Add space between letters */
+a {
+    font-size: 2rem; /* Text size */
+    background-image: linear-gradient(135deg, #2F80ED 0%, #B2FFDA 100%); /* Gradient color */
+    color: transparent; /* Make text transparent */
+    -webkit-background-clip: text; /* Ensure the gradient is applied to the text */
+    background-clip: text;
+    border: none; /* No border */
+    text-align: left; /* Left-align the text */
+    letter-spacing: 1px; /* Space between letters */
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-button:hover {
-    color: white; /* Change text color to white on hover */
+/* Hover effect for text color */
+a:hover {
+    color: transparent; /* Keep the gradient text on hover */
 }
 
-/* Remove button styles for links */
-button:focus {
-    outline: none; /* Remove outline when clicked */
-}
-
-/* Specific button styles */
+/* Specific link styles */
 .contact-btn {
     font-size: 2rem; /* Larger text for "Get in Touch" */
 }
