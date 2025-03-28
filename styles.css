@@ -90,6 +90,8 @@ body {
     color: #fff;
     text-align: right;
     padding-right: 5%;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; 
 }
 
 /* Sections */
@@ -168,11 +170,6 @@ button:hover {
 
 .download-btn:hover {
     background-color: #218838;
-}
-
-/* Spacing adjustments between buttons */
-.hero-content-right button:not(:first-child) {
-    margin-top: 10px; /* Add margin to separate buttons */
 }
 
 /* Add smooth scrolling effect when clicking links */
