@@ -4,11 +4,12 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100%; /* Use full height for the viewport */
     overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: auto; /* Allow vertical scrollbar if necessary */
+    overflow-y: auto; /* Allow vertical scrollbar only */
     background-color: #000; /* Black background */
     color: #fff; /* White text */
+    box-sizing: border-box; /* Make sure padding and border are included in the height */
 }
 
 /* Sticky Navigation Bar */
@@ -26,9 +27,10 @@ header {
 
 /* Add padding to body to avoid content getting hidden under the fixed header */
 body {
-    padding-top: 80px; /* Adjust based on header height */
+    padding-top: 80px; /* Adjust this value based on your header height */
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     padding: 0;
@@ -56,7 +58,7 @@ body {
     background: #000; /* Black background */
 }
 
-/* Center Left for "Hello I am Palash" */
+/* Left Side (Hello I am Palash) */
 .hero-content-left {
     max-width: 50%; /* Take up half the width */
     padding-left: 5%; /* Adjust for some space from the left */
@@ -74,7 +76,7 @@ body {
     font-weight: normal;
 }
 
-/* Right side section (will remain empty or you can add something) */
+/* Right side section (optional, for now empty) */
 .hero-content-right {
     max-width: 50%; /* Take up the right side */
     padding-right: 5%; /* Add some space from the right */
@@ -82,7 +84,7 @@ body {
     text-align: right; /* Align text to the right */
 }
 
-/* Typing effect for the text */
+/* Typing effect */
 #changing-text {
     font-weight: bold;
     border-right: 2px solid white;
@@ -101,6 +103,7 @@ section {
     box-sizing: border-box;
 }
 
+/* Project List */
 .project-list {
     display: flex;
     justify-content: center; /* Align projects centrally */
