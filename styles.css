@@ -153,12 +153,11 @@ span {
     font-weight: bold;
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth transition */
-    cursor: pointer;
 }
 
 /* Hover effect for text color */
 span:hover {
-    color: transparent; /* Keep the gradient on hover */
+    color: transparent; /* Keep the gradient text on hover */
 }
 
 /* Specific link styles */
