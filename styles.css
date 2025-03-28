@@ -127,3 +127,34 @@ footer {
     color: #fff;
     padding: 20px;
 }
+button {
+    background-color: #333; /* Dark background for the buttons */
+    color: white; /* White text */
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+.contact-btn {
+    background-color: #007bff; /* Blue background for 'Get in Touch' button */
+}
+
+.contact-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.download-btn {
+    background-color: #28a745; /* Green background for 'Download Resume' buttons */
+}
+
+.download-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
