@@ -3,9 +3,9 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 100%; /* Full height of the viewport */
-    background-color: #000;
-    color: #fff;
+    height: 100%; /* Ensures the body takes full height */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     box-sizing: border-box;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
@@ -23,7 +23,7 @@ header {
     box-sizing: border-box;
 }
 
-/* Add padding to body to avoid header covering content */
+/* Padding for the body to avoid header covering content */
 body {
     padding-top: 80px; /* Adjust this to match your header height */
 }
@@ -55,7 +55,6 @@ body {
     height: 100vh; /* Full screen height */
     background: #000;
     box-sizing: border-box;
-    padding: 50px; /* Padding around the content */
 }
 
 /* Left Side (Hello I am Palash) */
@@ -101,9 +100,8 @@ section {
     padding: 50px 20px;
     text-align: center;
     width: 100%;
-    min-height: 100%; /* Allow sections to take as much space as required */
+    height: 100%; /* Allow sections to take as much space as required */
     box-sizing: border-box;
-    padding-top: 80px; /* Prevent being hidden behind fixed header */
 }
 
 /* Project List */
