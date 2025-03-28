@@ -4,7 +4,7 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh; /* Ensure the body and html take up full height of viewport */
+    height: 100vh; /* Full viewport height */
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: auto; /* Allow vertical scrollbar if necessary */
     background-color: #000; /* Black background */
@@ -48,35 +48,41 @@ body {
 
 /* Hero Section */
 #hero {
-    height: calc(100vh - 80px); /* Take up the full screen height minus the header */
-    width: 100%; /* Full viewport width */
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Place content on both sides */
+    align-items: center; /* Vertically center the content */
+    width: 100%;
+    height: calc(100vh - 80px); /* Take full screen height minus the header */
     background: #000; /* Black background */
-    text-align: center;
-    margin-top: 80px; /* Offset content from the fixed header */
 }
 
-/* Make sure the text is centered and big */
-.hero-content {
-    max-width: 80%;
-    padding: 0 20px;
+/* Center Left for "Hello I am Palash" */
+.hero-content-left {
+    max-width: 50%; /* Take up half the width */
+    padding-left: 5%; /* Adjust for some space from the left */
+    color: #fff;
+    text-align: left; /* Align text to the left */
 }
 
-.hero-content h1 {
+.hero-content-left h1 {
     font-size: 5rem; /* Bigger text */
     margin: 0;
-    color: #fff; /* White text */
 }
 
-.hero-content h2 {
+.hero-content-left h2 {
     font-size: 2.5rem; /* Slightly bigger */
     font-weight: normal;
-    color: #fff; /* White text */
 }
 
-/* Typing effect */
+/* Right side section (will remain empty or you can add something) */
+.hero-content-right {
+    max-width: 50%; /* Take up the right side */
+    padding-right: 5%; /* Add some space from the right */
+    color: #fff;
+    text-align: right; /* Align text to the right */
+}
+
+/* Typing effect for the text */
 #changing-text {
     font-weight: bold;
     border-right: 2px solid white;
@@ -117,9 +123,3 @@ footer {
     color: #fff;
     padding: 20px;
 }
-
-/* Ensure no vertical overflow */
-body {
-    overflow-y: auto;
-}
-
