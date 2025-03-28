@@ -146,14 +146,16 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%; /* Make the buttons full width */
 }
 
 button:hover {
-    background-color: #444;
+    background-color: #444; /* Slightly lighter background on hover */
 }
 
+/* Specific button styles */
 .contact-btn {
-    background-color: #007bff; /* Blue background */
+    background-color: #007bff; /* Blue for Get in Touch */
 }
 
 .contact-btn:hover {
@@ -161,11 +163,16 @@ button:hover {
 }
 
 .download-btn {
-    background-color: #28a745; /* Green background */
+    background-color: #28a745; /* Green for Download Resume */
 }
 
 .download-btn:hover {
     background-color: #218838;
+}
+
+/* Spacing adjustments between buttons */
+.hero-content-right button:not(:first-child) {
+    margin-top: 10px; /* Add margin to separate buttons */
 }
 
 /* Add smooth scrolling effect when clicking links */
