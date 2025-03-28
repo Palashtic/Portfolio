@@ -90,6 +90,7 @@ body {
     color: #fff;
     text-align: right;
     padding-right: 5%;
+    display: flex;
     flex-direction: column; /* Stack buttons vertically */
     gap: 15px; 
 }
@@ -139,37 +140,31 @@ footer {
 
 /* Button Styles */
 button {
-    background-color: #333;
-    color: white;
+    background: none; /* Remove background */
+    color: transparent; /* Initially set color to transparent */
+    background-image: linear-gradient(135deg, #2F80ED 0%, #B2FFDA 100%); /* Gradient background */
+    font-size: 2rem; /* Increase text size */
     border: none;
-    padding: 15px 30px;
-    margin-top: 20px;
-    border-radius: 5px;
-    font-size: 1rem;
+    padding: 0; /* Remove padding to make it text */
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%; /* Make the buttons full width */
+    transition: color 0.3s ease; /* Smooth transition for text color change */
+    text-align: left; /* Align text to the left */
+    letter-spacing: 1px; /* Add space between letters */
+    font-weight: bold;
+    text-decoration: none;
 }
 
 button:hover {
-    background-color: #444; /* Slightly lighter background on hover */
+    color: white; /* Change text color to white on hover */
 }
 
 /* Specific button styles */
 .contact-btn {
-    background-color: #007bff; /* Blue for Get in Touch */
-}
-
-.contact-btn:hover {
-    background-color: #0056b3;
+    font-size: 2rem; /* Larger font size */
 }
 
 .download-btn {
-    background-color: #28a745; /* Green for Download Resume */
-}
-
-.download-btn:hover {
-    background-color: #218838;
+    font-size: 1.8rem; /* Slightly smaller font size for download buttons */
 }
 
 /* Add smooth scrolling effect when clicking links */
