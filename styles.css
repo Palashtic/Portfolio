@@ -3,11 +3,11 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%; /* Ensures the body takes full height */
+    height: 100%; /* Ensure the body takes the full height */
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow: hidden; /* Prevent horizontal scroll */
 }
 
 /* Sticky Navigation Bar */
