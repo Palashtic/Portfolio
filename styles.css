@@ -88,11 +88,14 @@ body {
 .hero-content-right {
     width: 50%;
     color: #fff;
-    text-align: right;
+    text-align: right; /* Align text to the right */
     padding-right: 5%;
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 15px; 
+    flex-direction: column; /* Stack text links vertically */
+    gap: 20px; /* Space between links */
+    justify-content: center; /* Vertically center the links */
+    align-items: flex-end; /* Align to the right */
+    height: 100%; /* Full height of section */
 }
 
 /* Sections */
@@ -139,17 +142,17 @@ footer {
 }
 
 a {
-    font-size: 2rem; /* Text size */
+    font-size: 2rem; /* Larger text size */
     background-image: linear-gradient(135deg, #2F80ED 0%, #B2FFDA 100%); /* Gradient color */
     color: transparent; /* Make text transparent */
-    -webkit-background-clip: text; /* Ensure the gradient is applied to the text */
+    -webkit-background-clip: text; /* Apply the gradient to the text */
     background-clip: text;
     border: none; /* No border */
-    text-align: left; /* Left-align the text */
-    letter-spacing: 1px; /* Space between letters */
+    text-align: left; /* Align text left */
+    letter-spacing: 1px; /* Add spacing between letters */
     font-weight: bold;
     text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    transition: color 0.3s ease; /* Smooth transition */
 }
 
 /* Hover effect for text color */
