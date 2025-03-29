@@ -329,61 +329,51 @@ html {
 }
 
 /* Experience Section */
+/* Experience Section */
 #experience {
     text-align: center;
     padding: 50px 0;
+    background-color: #0a0a0a; /* Dark background */
 }
 
 .experience-title {
     font-size: 3rem;
     font-weight: bold;
-    text-align: center;
     color: #B2FFDA;
     margin-bottom: 40px;
 }
 
-/* Experience Timeline */
+/* Experience Container */
 .experience-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 80%;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* Individual Experience Block */
-.experience-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
-    background-color: #111;
+/* Individual Experience Box */
+.experience-card {
+    background: #111; /* Darker shade */
+    border-radius: 15px;
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(178, 255, 218, 0.5);
-    transition: transform 0.3s ease-in-out;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(178, 255, 218, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
 }
 
 /* Hover Effect */
-.experience-item:hover {
-    transform: scale(1.03);
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(178, 255, 218, 0.5);
 }
 
-/* Experience Logo */
+/* Logo */
 .exp-logo {
     width: 60px;
     height: 60px;
-    margin-right: 20px;
-    border-radius: 10px;
     object-fit: contain;
-}
-
-/* Experience Details */
-.exp-details {
-    text-align: left;
-    color: white;
+    margin-bottom: 10px;
 }
 
 /* Job Title */
@@ -405,7 +395,7 @@ html {
     font-size: 1rem;
     font-weight: 400;
     color: #ddd;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* Description */
