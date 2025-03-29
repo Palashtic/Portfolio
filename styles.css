@@ -500,3 +500,79 @@ html {
 .project-links a:hover {
     color: #B2FFDA;
 }
+
+/* Who Am I Section */
+#whoami {
+    text-align: center;
+    padding: 60px 20px;
+    background: #0a0a0a;
+}
+
+/* Title */
+.whoami-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #B2FFDA;
+    margin-bottom: 40px;
+}
+
+/* Intro Section */
+.whoami-intro {
+    margin-bottom: 30px;
+}
+
+.whoami-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2F80ED;
+}
+
+.whoami-tagline {
+    font-size: 1.2rem;
+    color: #B2FFDA;
+}
+
+/* Hobbies Grid */
+.whoami-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Each Hobby Box */
+.whoami-item {
+    background: #111;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(178, 255, 218, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.whoami-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(178, 255, 218, 0.5);
+}
+
+/* Icons */
+.whoami-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Hobby Title */
+.whoami-item h4 {
+    font-size: 1.4rem;
+    color: #B2FFDA;
+    margin-bottom: 10px;
+}
+
+/* Hobby Description */
+.whoami-item p {
+    font-size: 1rem;
+    color: #ddd;
+}
