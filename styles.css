@@ -329,7 +329,6 @@ html {
 }
 
 /* Experience Section */
-/* Experience Section */
 #experience {
     text-align: center;
     padding: 50px 0;
@@ -343,35 +342,54 @@ html {
     margin-bottom: 40px;
 }
 
-/* Experience Container */
-.experience-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
 }
 
-/* Individual Experience Box */
-.experience-card {
-    background: #111; /* Darker shade */
-    border-radius: 15px;
+/* Timeline Line */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: #B2FFDA;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    background: #111;
+    border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 45%;
     box-shadow: 0 0 15px rgba(178, 255, 218, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    text-align: center;
+}
+
+/* Alternate positioning */
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+.timeline-item:nth-child(even) {
+    left: 50%;
 }
 
 /* Hover Effect */
-.experience-card:hover {
+.timeline-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(178, 255, 218, 0.5);
 }
 
 /* Logo */
 .exp-logo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -395,7 +413,6 @@ html {
     font-size: 1rem;
     font-weight: 400;
     color: #ddd;
-    margin-bottom: 10px;
 }
 
 /* Description */
@@ -404,6 +421,7 @@ html {
     color: #B2FFDA;
     margin-top: 5px;
 }
+
 
 
 /* Centering the Projects Title */
