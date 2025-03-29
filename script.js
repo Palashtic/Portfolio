@@ -29,3 +29,21 @@ document.addEventListener("DOMContentLoaded", () => {
     currentWord = words[i];
     typeEffect();
 });
+
+function showSummary(type) {
+    let profSummary = document.getElementById("professional-summary");
+    let persSummary = document.getElementById("personal-summary");
+    let buttons = document.querySelectorAll(".tab-btn");
+
+    if (type === "professional") {
+        profSummary.style.display = "block";
+        persSummary.style.display = "none";
+    } else {
+        profSummary.style.display = "none";
+        persSummary.style.display = "block";
+    }
+
+    // Update active tab
+    buttons.forEach(btn => btn.classList.remove("active"));
+    document.querySelector(`.tab-btn[onclick="showSummary('${type}')"]`).classList.add("active");
+}

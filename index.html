@@ -34,23 +34,35 @@
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Brief intro about yourself, your experience, and goals.</p>
-    </section>
+        <!-- About Me Title -->
+        <h2 class="about-title">About Me</h2>
     
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Short description</p>
+        <div class="about-container">
+            <!-- Profile Picture -->
+            <div class="about-left">
+                <img src="profile-pic.jpg" alt="Palash Chaturvedi" class="about-image">
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Short description</p>
+    
+            <!-- Summary Box -->
+            <div class="about-right">
+                <div class="summary-box">
+                    <div class="summary-tabs">
+                        <button class="tab-btn active" onclick="showSummary('professional')">Professional Summary</button>
+                        <button class="tab-btn" onclick="showSummary('personal')">Personal Summary</button>
+                    </div>
+                    <div class="summary-content">
+                        <p id="professional-summary">
+                            I'm a data-driven technology enthusiast with experience in data engineering, AI, and product management. I thrive at the intersection of business and technology, building scalable and impactful solutions.
+                        </p>
+                        <p id="personal-summary" style="display: none;">
+                            Outside of work, I love running, watching football and films, and diving into the business side of entertainment and sports. Passionate about making the world a better place!
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    
     
     <section id="contact">
         <h2>Contact</h2>

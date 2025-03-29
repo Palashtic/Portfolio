@@ -173,3 +173,88 @@ span:hover {
 html {
     scroll-behavior: smooth;
 }
+
+/* About Me Section */
+#about {
+    padding: 80px 10%;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left */
+}
+
+/* About Me Title */
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #B2FFDA;
+    margin-bottom: 20px;
+}
+
+/* Layout */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left Side (Profile Picture) */
+.about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #B2FFDA;
+    box-shadow: 0 0 15px rgba(178, 255, 218, 0.5);
+}
+
+/* Right Side (Summary Box) */
+.about-right {
+    width: 50%;
+}
+
+/* Summary Box */
+.summary-box {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Summary Tabs */
+.summary-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    border-bottom: 2px solid #B2FFDA;
+}
+
+/* Summary Content */
+.summary-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
