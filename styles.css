@@ -287,7 +287,7 @@ html {
 
 /* Individual education box */
 .education-box {
-    width: 350px;
+    width: 450px;
     height: 380px;
     background-color: #111;
     border-radius: 10px;
@@ -366,7 +366,7 @@ html {
 
 /* Logo inside the work experience box */
 .work-logo {
-    width: 100px; /* Adjusted logo size */
+    width: 150px; /* Adjusted logo size */
     height: auto;
     margin-bottom: 15px;
 }
