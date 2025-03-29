@@ -205,15 +205,15 @@ html {
 
 /* Left Side (Profile Picture) */
 .about-left {
-    flex: 1;
+    flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .about-image {
-    width: 400px;  /* Increased width for a broader look */
-    height: 180px; /* Reduced height to make it less tall */
+    width: 200px;  /* Increased width for a broader look */
+    height: 350px; /* Reduced height to make it less tall */
     border-radius: 10px;
     object-fit: cover;
     border: 3px solid #B2FFDA;
@@ -222,7 +222,7 @@ html {
 
 /* Right Side (Summary Box) */
 .about-right {
-    flex: 1.5;
+    flex: 2.5;
 }
 
 /* Summary Box */
