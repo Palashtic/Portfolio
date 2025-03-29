@@ -213,7 +213,7 @@ html {
 
 .about-image {
     width: 200px;  /* Increased width for a broader look */
-    height: 350px; /* Reduced height to make it less tall */
+    height: 900px; /* Reduced height to make it less tall */
     border-radius: 10px;
     object-fit: cover;
     border: 3px solid #B2FFDA;
@@ -262,4 +262,51 @@ html {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #ddd;
+}
+
+/* Centering the title */
+.education-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #B2FFDA;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Education container to hold two boxes */
+.education-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Space between boxes */
+    align-items: center;
+    width: 100%;
+}
+
+/* Individual education box */
+.education-box {
+    width: 300px;
+    height: 250px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(178, 255, 218, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo inside the education box */
+.education-logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Degree & year styling */
+.education-text {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
 }
