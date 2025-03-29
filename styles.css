@@ -205,7 +205,7 @@ html {
 
 /* Left Side (Profile Picture) */
 .about-left {
-    flex: 2;
+    flex: 4.5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,7 +222,7 @@ html {
 
 /* Right Side (Summary Box) */
 .about-right {
-    flex: 4.5;
+    flex: 1.5;
 }
 
 /* Summary Box */
@@ -272,13 +272,15 @@ html {
     color: #B2FFDA;
     width: 100%;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Education container to hold two boxes */
 .education-container {
     display: flex;
     justify-content: center;
-    gap: 80px; /* Space between boxes */
+    gap: 100px; /* Space between boxes */
     align-items: center;
     width: 100%;
 }
@@ -299,7 +301,7 @@ html {
 
 /* Logo inside the education box */
 .education-logo {
-    width: 100px; /* Increased logo size */
+    width: 150px; /* Increased logo size */
     height: auto;
     margin-bottom: 15px;
 }
@@ -318,4 +320,10 @@ html {
     color: white;
     font-weight: bold;
     margin-top: 10px;
+}
+.university-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2F80ED; /* Blue shade for differentiation */
+    margin-top: 5px;
 }
