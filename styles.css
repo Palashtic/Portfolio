@@ -189,16 +189,18 @@ html {
     font-size: 3rem;
     font-weight: bold;
     color: #B2FFDA;
-    margin-bottom: 20px;
+    text-align: center; /* Centering the title */
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 /* Layout */
 .about-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center content horizontally */
     align-items: center;
     width: 100%;
-    gap: 30px; /* Reduce space between image and box */
+    gap: 40px; /* Balanced spacing */
 }
 
 /* Left Side (Profile Picture) */
@@ -210,9 +212,9 @@ html {
 }
 
 .about-image {
-    width: 350px; /* Increased width */
-    height: 220px; /* Professional rectangle */
-    border-radius: 10px; /* Softer corners */
+    width: 400px;  /* Increased width for a broader look */
+    height: 180px; /* Reduced height to make it less tall */
+    border-radius: 10px;
     object-fit: cover;
     border: 3px solid #B2FFDA;
     box-shadow: 0 0 15px rgba(178, 255, 218, 0.5);
