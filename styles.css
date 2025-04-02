@@ -591,7 +591,8 @@ html {
     color: #B2FFDA;
 }
 
-#contact p {
+/* Contact Items - Each on a new line */
+.contact-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -615,4 +616,5 @@ html {
     width: 24px; /* Adjust size */
     height: 24px;
 }
+
 
