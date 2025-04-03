@@ -386,6 +386,17 @@ html {
 }
 
 /* Projects Grid Container */
+#projects {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px; /* Adds space between title and project boxes */
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
