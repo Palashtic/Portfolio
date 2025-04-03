@@ -476,7 +476,7 @@ html {
 .whoami-name {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2F80ED;
+    color: white;
 }
 
 .whoami-tagline {
@@ -535,18 +535,24 @@ html {
     color: white;
 }
 
+#contact h2 {
+    margin-bottom: 20px; /* Adds space between "Contact" heading and icons */
+    font-size: 2rem; /* Adjust heading size */
+}
+
 .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px; /* Increases space between each contact item */
+    margin-top: 20px; /* Adds space between heading and first contact item */
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.2rem;
+    gap: 12px; /* Space between icon and text */
+    font-size: 1.3rem;
     font-weight: 500;
     text-decoration: none;
     color: white;
@@ -554,13 +560,14 @@ html {
 }
 
 .contact-item img {
-    width: 28px; /* Icon size */
-    height: 28px;
+    width: 30px; /* Slightly bigger icons */
+    height: 30px;
 }
 
 .contact-item:hover {
     color: #B2FFDA;
 }
+
 
 
 
